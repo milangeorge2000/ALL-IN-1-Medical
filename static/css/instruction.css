@@ -1,0 +1,16 @@
+body{
+    background-color: #101010;
+}
+h1{
+    color:white;
+    padding-left: 35%;
+}
+h2{
+    color:#D3D3D3;
+}
+.imagei{
+ float:right;
+}
+.instruction{
+    color:#B8B8B8;
+}
