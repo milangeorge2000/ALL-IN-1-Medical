@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thyroid</title>
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thyroid</title>
+    </head>
+    <body>
+        
+    </head>
+    <body>
+        <h1>Welcome to Thyroid Prediction Page</h1>
+        <h2>Press below to upload as a csv file</h2>
+        <div class="vv">
+          <a href="thyroid_csv">
+            <button id="pr">Click Here</button>
+          </a>
+         </div>
+        <p>Or</p>
+        <h3>Enter the details</h3>
+        <div class="container">
+            <form action="/thyroid_predict" method="POST">
+              <div class="row">
+                <div class="col-25">
+                  <label for="age">T3</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="age" name="ttt" placeholder="Enter the T3 level">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="text">FTI</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="gender" name="ffti" placeholder="Enter the plasma protien binding">
+                </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="tsh">TSH</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="tsh" name="the"placeholder="Enter the thyroid stimulating hormone">
+                </div>
+               
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="weight">T4U</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="weight" name="ddd" placeholder="Enter the thyroxine utilation rate" >
+                </div>
+               
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="ap_hi">TT4</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="ap_hi" name="tttha"placeholder="Enter the total thyroxine">
+                </div>
+               
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="ap_lo">Age</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="ap_lo" name="num" placeholder="enter the age">
+                </div>
+               
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="Cholesterol">Sex</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="Cholesterol" name="gender"placeholder="Enter 1 if male and 0 if female">
+                </div>
+               
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="active">Onthyroxine</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="active" name="thy"placeholder="Enter 1 if onthyroxine else 0">
+                </div>
+               
+              </div>
+              
+     
+              <div class="row">
+                <div class="col-25">
+                  <label for="glue">Thyroid Surgery</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="glue" name="surgery" placeholder="Enter 1 if you undergone a surgery else 0">
+                </div>
+               
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="smoke">Query Hypothyroid</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="smoke" name="query" placeholder="Enter 1 if you suffered from thyroid else 0">
+                </div>
+               
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="alco">Query Hyperthyroid</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="alco" name="hyper"placeholder="Enter 1 if you suffered from thyroid else 0">
+                </div>
+               
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="active">Sick</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="active" name="cough"placeholder="Enter 1 if euthyroid sicksyndrome is high else 0" >
+                </div>
+               
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="active">Goitre</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="active" name="goi"placeholder="Enter 1 if he has goitre else 0" >
+                </div>
+               
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="active">TSH measured</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="active" name="meas"placeholder="Enter 1 if high else 0" >
+                </div>
+               
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="active">T3 Measured</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="active" name="measu"placeholder="Enter 1 if high else 0" >
+                </div>
+               
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="active">TT4 Measured</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="active" name="measure"placeholder="Enter 1 if high else 0" >
+                </div>
+               
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="active">T4U Measure</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="active" name="measured"placeholder="Enter 1 if high else 0" >
+                </div>
+               
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="active">FTI measured</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="active" name="fmeasure"placeholder="Enter 1 if high  else 0" >
+                </div>
+               
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="active">TBG Measured</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="active" name="tmeasure"placeholder="Enter 1 if high else 0" >
+                </div>
+               
+              </div>
+              
+       
+            </form>
+            <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+          </div>
+    </body>
+    </html>
+    
+</body>
+</html>
