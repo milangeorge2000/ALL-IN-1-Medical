@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes</title>
+</head>
+<body>
+  <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+</head>
+<body>
+    <h1>Welcome to Diabetes Page</h1>
+    <h2>Press below to upload as a csv file</h2>
+    <div class="vv">
+     <a href="diabetes_csv">
+       <button id="pr">Click Here</button>
+     </a>
+     </div>
+    <p>Or</p>
+    <h3>Enter the details</h3>
+    <div class="container">
+        <form action="\diabetes_predict" method="POST">
+          <div class="row">
+            <div class="col-25">
+              <label for="age">Pregnanacies</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="age" name="pregnancies" placeholder="Enter no of times pregnant">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="height">Glucose</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="gender" name="glucose" placeholder="plasma glucose conc at 2 hrs">
+            </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="height">Blood Pressure</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="blood" name="bloodpressure"placeholder="Enter diastolic bloodpressure">
+            </div>
+           
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="weight">SkinThickness</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="weight" name="skinthickness" placeholder="Enter Triceps skin fold thickness(mm)" >
+            </div>
+           
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="ap_hi">Insulin</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="ap_hi" name="insulin"placeholder="Enter two hour serum insulin">
+            </div>
+           
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="ap_lo">BMI</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="ap_lo" name="bmi" placeholder="Enter Body Mass Index">
+            </div>
+           
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="Cholesterol">DiabetesPedigree Function</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="Cholesterol" name="dpf"placeholder="Enter the Diabetes pedigree Function">
+            </div>
+           
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="glue">Age</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="glue" name="age" placeholder="Enter Age">
+            </div>
+           
+          </div>
+         
+         
+          
+ 
+        </form>
+        <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+      </div>
+</body>
+</html>

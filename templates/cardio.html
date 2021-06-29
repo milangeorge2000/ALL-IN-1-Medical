@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardio</title>
+</head>
+<body>
+  <link href="{{ url_for('static', filename='css/hari.css') }}" rel="stylesheet">
+</head>
+<body>
+    <h1>Welcome to Cardio Page</h1>
+    <h2>Press below to upload as a csv file</h2>
+    <div class="vv">
+     <a href="cardio_csv">
+       <button id="pr">Click Here</button>
+     </a>
+     </div>
+    <p>Or</p>
+    <h3>Enter the details</h3>
+    <div class="container">
+        <form action="/cardio_predict" method="POST">
+          <div class="row">
+            <div class="col-25">
+              <label for="age">Age</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="age" name="age" placeholder="Enter age">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="gender">Gender</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="gender" name="gender" placeholder="Enter 1 for male,2 for female">
+            </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="height">height</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="height" name="height"placeholder="Height in cm">
+            </div>
+           
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="weight">Weight</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="weight" name="weight" placeholder="Weight in kg" >
+            </div>
+           
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="ap_hi">ap_hi</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="ap_hi" name="ap_hi"placeholder="Enter systolic blood pressure">
+            </div>
+           
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="ap_lo">ap_lo</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="ap_lo" name="ap_lo" placeholder="Enter diastolic blood pressure">
+            </div>
+           
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="Cholesterol">Cholesterol</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="Cholesterol" name="Cholesterol"placeholder="Enter 1.Normal 2.Above normal 3.Well above normal">
+            </div>
+           
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="glue">Glue</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="glue" name="glue" placeholder="Enter 1.Normal 2.Above normal 3.Well above normal">
+            </div>
+           
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="smoke">Smoke</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="smoke" name="smoke" placeholder="Enter 1 if patient smokes else 2">
+            </div>
+           
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="alco">Alco</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="alco" name="alco"placeholder="Enter 1 if person drinks alchohol else 0 ">
+            </div>
+           
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="active">Active</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="active" name="active"placeholder="Enter 1 if doing some physical activity else 0" >
+            </div>
+           
+          </div>
+          
+ 
+        </form>
+        <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+      </div>
+</body>
+</html>
